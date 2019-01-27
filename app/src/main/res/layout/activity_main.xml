@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:id="@+id/SignInLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@mipmap/launch_image" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/emailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/MyErrorText"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="13"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/passLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/MyErrorText"
+                app:hintTextAppearance="@style/MyHintText"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                android:id="@+id/passInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="13"
+                android:hint="Password"
+                android:inputType="textPassword">
+
+            </EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/btn_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorAccent"
+                android:scaleType="fitCenter"
+                android:text="Login"
+                android:textColor="@color/white"
+                app:spinning_bar_color="#FFF"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No account yet?" />
+
+                <com.gc.materialdesign.views.ButtonFlat
+                    android:id="@+id/signUpBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:text="Sign up" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>

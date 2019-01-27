@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F39401</color>
+    <color name="colorPrimaryDark">#ba6600</color>
+    <color name="colorPrimaryLight">#ffc546</color>
+    <color name="colorAccent">#ff6f00</color>
+    <color name="orange">#FF5722</color>
+    <color name="white">#FFFFFF</color>
+    <color name="error">#CF432C</color>
+    <color name="black">#000000</color>
+    <color name="TitleNote">#191919</color>
+    <color name="TextOfNote">#323232</color>
+</resources>

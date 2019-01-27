@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_email"
+            android:title="error@gmail.com"
+            />
+        <item
+            android:id="@+id/nav_about"
+            android:title="About Crossnote"/>
+        <item
+            android:id="@+id/nav3"
+            android:title="Sign Out" />
+        <item
+            android:id="@+id/nav4"
+            android:title="Exit" />
+    </group>
+</menu>
